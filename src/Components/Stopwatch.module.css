@@ -1,0 +1,32 @@
+.button{
+    background-color: #282c34;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    min-width: 41px;
+    height: 41px;
+    padding: 12px;
+    margin: auto;
+}
+
+.head{
+    color: #282c34;
+}
+
+.buttonDiv{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    gap: 20px;
+    padding: 10px;
+}
+
+.timer{
+    font-family: 'Source Code Pro', monospace;
+    color: #282c34;
+}

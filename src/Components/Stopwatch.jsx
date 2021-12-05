@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import styles from "./Stopwatch.module.css";
 
 export default function Stopwatch(){
     const [seconds, setSeconds] = useState(0);
@@ -43,11 +44,13 @@ export default function Stopwatch(){
 
     return (
         <div>
-            <h1>Stopwatch</h1>
-            <h2>{Math.floor(hours/10)}{hours%10} : {Math.floor(minutes/10)}{minutes%10} : {Math.floor(seconds/10)}{seconds%10}</h2>
-            <button onClick={startTimer}>START</button>
-            <button onClick={pauseTimer}>PAUSE</button>
-            <button onClick={resetTimer}>RESET</button>
+            <h1 className={styles.head}>Stopwatch</h1>
+            <h1 className={styles.timer}>{Math.floor(hours/10)}{hours%10} : {Math.floor(minutes/10)}{minutes%10} : {Math.floor(seconds/10)}{seconds%10}</h1>
+            <div className={styles.buttonDiv}>
+                <button className={styles.button} onClick={startTimer}>START</button>
+                <button className={styles.button} onClick={pauseTimer}>PAUSE</button>
+                <button className={styles.button} onClick={resetTimer}>RESET</button>
+            </div>
         </div>
     )
     
